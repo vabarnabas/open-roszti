@@ -25,7 +25,7 @@ const Login = ({ setResponseData }) => {
       <form onSubmit={onLogin} action="" className="text-slate-600">
         <p className="flex items-end justify-center text-4xl font-bold mb-6">openRÖszTI<span className="text-base text-emerald-500">v6</span></p>
         <div className="mb-3">
-          <p className="mb-0.5 text-xs pl-3 font-bold">RÖszTI Kód<span className="text-emerald-500">*</span></p>
+          <p className="mb-0.5 text-xs pl-3 font-bold">RÖszTI Kód</p>
           <input value={code} onChange={(e) => setCode(e.target.value)} required placeholder="RÖszTI Kód" type="text" className="w-full bg-slate-200 rounded-lg outline-none px-3 py-1 placeholder:text-sm" />
         </div>
         <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-1 rounded-lg mb-1">Tovább</button>
