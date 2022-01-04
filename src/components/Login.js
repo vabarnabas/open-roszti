@@ -28,9 +28,8 @@ const Login = ({ setResponseData }) => {
           <p className="mb-0.5 text-xs pl-3 font-bold">RÖszTI Kód<span className="text-emerald-500">*</span></p>
           <input value={code} onChange={(e) => setCode(e.target.value)} required placeholder="RÖszTI Kód" type="text" className="w-full bg-slate-200 rounded-lg outline-none px-3 py-1 placeholder:text-sm" />
         </div>
-        <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-1 rounded-lg font-semibold mb-1">Tovább</button>
+        <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-1 rounded-lg mb-1">Tovább</button>
       </form>}
-        <p className="absolute bottom-2 text-xs">Bármilyen kérdés esetén írj a <span className='text-emerald-500 font-bold'>jazmin.varga@estiem.org</span> címre!</p>
     </div>
   )
 }
