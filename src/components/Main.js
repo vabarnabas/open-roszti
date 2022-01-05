@@ -22,7 +22,7 @@ const Main = ({ responseData }) => {
             <div className="mx-4 mb-8 flex flex-col items-center justify-start overflow-y-scroll scrollbar-hide space-y-2">
             {responseData.slice(0, responseData.length-3).map((item) => (
                 <div key={uuidv4()} className="flex items-center justify-center py-2 px-6 bg-slate-200 rounded-md w-full md:w-[40%]">
-                    <p className="mr-auto w-2/3 font-semibold">{item.event.replaceAll(/\n/g,' ')}</p>
+                    <p className="mr-auto w-2/3 font-semibold">{item.event}</p>
                     <p className="text-xl font-semibold text-right">{item.point}</p>
                 </div>
             ))}
