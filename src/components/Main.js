@@ -7,15 +7,15 @@ const Main = ({ responseData }) => {
         <div className='w-full h-full grid grid-rows-2 text-slate-600'>
             <div className="flex flex-col items-center justify-center">
                 <div className="mb-6 flex flex-col items-center justify-center">
-                    <p className="text-6xl font-semibold">{responseData.at(-2).point}</p>
+                    <p className="text-6xl font-semibold">{responseData[responseData.length-2].point}</p>
                     <p className="text-xs font-semibold">PONTSZÁM</p>
                 </div>
                 <div className="mb-4 flex flex-col items-center justify-center">
-                    <p className="text-xl font-semibold">{responseData.at(-3).point}</p>
+                    <p className="text-xl font-semibold">{responseData[responseData.length-3].point}</p>
                     <p className="text-xs font-semibold">STÁTUSZ</p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <p className="text-xl font-semibold">{responseData.at(-1).point}</p>
+                    <p className="text-xl font-semibold">{responseData[responseData.length-1].point}</p>
                     <p className="text-xs font-semibold">SZAVAZAT</p>
                 </div>
             </div>
