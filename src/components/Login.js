@@ -96,7 +96,7 @@ const Login = ({ setResponseData, auth, user }) => {
         </div>
         {showLogin ? <div className="fixed top-0 left-0 bg-slate-500 bg-opacity-60 w-full h-full z-10 flex items-center justify-center">
           <form onSubmit={onAdminLogin} action="" className='relative text-slate-600 bg-slate-100 px-6 py-8 rounded-lg'>
-            <HiX onClick={() => setShowLogin(false)} className='absolute right-2 top-2 cursor-pointertext-slate-600 hover:text-slate-700 '/>
+            <HiX onClick={() => setShowLogin(false)} className='absolute right-2 top-2 cursor-pointer text-slate-600 hover:text-slate-700 '/>
             <p className="flex items-end justify-center text-3xl font-bold mb-6">Bejelentkezés</p>
             <p className="mb-0.5 text-xs pl-1 font-bold">Admin E-mail</p>
             <input required value={mail} onChange={(e) => setMail(e.target.value)} placeholder="Admin E-mail" type="email" className={`w-full bg-slate-200 rounded-lg outline-none px-3 py-1 placeholder:text-sm ${errorMessage !== '' && code === '' ? 'ring-1 ring-pink-500 text-pink-500' : ''}`} />
