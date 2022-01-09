@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from 'uuid'
 const Main = ({ responseData }) => {
 
     return (
-        <div className='w-full h-full grid grid-rows-2 text-slate-600'>
-            <div className="flex flex-col items-center justify-center">
+        <div className='w-full h-full grid grid-rows-2 print:grid-rows-1 text-slate-600'>
+            <div className="flex flex-col items-center justify-center print:hidden">
                 <div className="mb-6 flex flex-col items-center justify-center">
                     <p className="text-6xl font-semibold">{responseData[responseData.length-2].point}</p>
                     <p className="text-xs font-semibold">PONTSZÁM</p>
