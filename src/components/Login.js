@@ -63,9 +63,9 @@ const Login = ({ setResponseData, auth, user }) => {
     });
   }
 
-  const onUserAdd = (e) => {
+  const onUserAdd = async (e) => {
     e.preventDefault();
-    fetch(`https://us-central1-open-roszti.cloudfunctions.net/app/users/add?name=${userName}&mail=${userMail}`,{
+    await fetch(`https://us-central1-open-roszti.cloudfunctions.net/app/users/add?name=${userName}&mail=${userMail}`,{
       method: 'POST'
     })
     .then(() => {
